@@ -1,0 +1,156 @@
+
+
+/*--START BOX STYLES--*/
+
+.box-pages
+{
+    padding-left: 1px!important;
+}
+
+.disable-mouse
+{
+    pointer-events: none;
+}
+
+.animate
+{
+    transform: translateX(0px)!important;
+    opacity: 1!important;
+    transition-duration: 0.2s;
+}
+
+.animate-hold
+{
+    transform: translateX(-20px);
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+}
+
+.animate-opposite
+{
+    transform: translateX(0px)!important;
+    opacity: 1!important;
+    transition-duration: 0.2s;
+}
+
+.animate-hold-opposite
+{
+    transform: translateX(20px);
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* Box area
+===================================================================================================================================*/
+
+#box-area
+{
+    position: relative;
+    display: flex;
+    background-size: 100%;
+    background-position: 50%;
+    height: auto;
+}
+
+ul.box-pages
+{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.box-pages .box
+{
+    width: 33.333%;
+    float: left;
+    position: relative;
+    height: 46.5vh;
+    display: inline-flex;
+    text-align: center;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.box-info
+{
+    position: relative;
+    margin: auto;
+    color: #fff;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+.box-background
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-size: cover;
+    -webkit-filter: brightness(0.8);
+    -moz-filter: brightness(0.8);
+    -ms-filter: brightness(0.8);
+    -o-filter: brightness(0.8);
+    filter: brightness(0.8);
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+.box-link
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+}
+
+.box-info h3
+{
+    font-size: 24px;
+    width: auto;
+    margin: auto;
+    display: inline-table;
+    border-bottom: 2px solid #fff;
+    padding: 0px 20px;
+}
+
+#box-excerpt
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul.box-pages
+{
+    margin: 0;
+    padding-left: 0px!important;
+}
+
+
+@media only screen and (max-width: 1220px)
+{
+/* Grid
+===================================================================================================================================*/
+    .box-pages .box:nth-child(-n+3)
+    {
+        border-bottom: 1px solid #fff;
+    }
+    .box-pages .box
+    {
+        width: 50%;
+        border: 1px solid #fff!important;
+    }
+    ===================================================================================================================================*/
+    .box-pages .box
+    {
+        width: 100%;
+    }
+}
+
+
